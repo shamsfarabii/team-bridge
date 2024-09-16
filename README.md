@@ -19,7 +19,7 @@ Team Bridge provides an easy-to-use interface for team communication, enabling u
 
 ## Technologies
 
-- **Frontend**: Built using [Bun](https://bun.sh/)
+- **Frontend**: Built using [Bun](https://bun.sh/),[Shadcn](https://ui.shadcn.com/)
 - **Backend**: Powered by [Convex](https://convex.dev/)
 - **Real-time Communication**: WebSockets for real-time messaging
 - **Database**: Convex database for storing message and user data
@@ -47,7 +47,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/team-bridge.git
+    git clone https://github.com/shamsfarabii/team-bridge.git
     cd team-bridge
     ```
 
