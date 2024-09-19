@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Team Bridge
 
-## Getting Started
+Team Bridge is a team communication platform similar to Slack. It helps teams collaborate through messaging, channels, and file sharing.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About](#about)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Scripts](#scripts)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Team Bridge provides an easy-to-use interface for team communication, enabling users to create channels, send direct messages, and share files. The application is built to enhance collaboration and communication within a team.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies
 
-## Learn More
+- **Frontend**: Built using [Bun](https://bun.sh/),[Shadcn](https://ui.shadcn.com/)
+- **Backend**: Powered by [Convex](https://convex.dev/)
+- **Real-time Communication**: WebSockets for real-time messaging
+- **Database**: Convex database for storing message and user data
+- **Deployment**: Configured for development with Bun and Convex
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Team Channels for group discussions
+- Direct Messaging between team members
+- File sharing in conversations
+- Real-time updates for messages and notifications
+- User-friendly UI for easy navigation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ensure you have the following installed:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Node.js**: v16.x or later
+- **Bun**: v0.x.x (Install [Bun](https://bun.sh/docs/install) if not already)
+- **Convex CLI**: (Install [Convex CLI](https://docs.convex.dev/get-started/installation))
+
+### Setup
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/shamsfarabii/team-bridge.git
+    cd team-bridge
+    ```
+
+2. Install dependencies:
+    ```bash
+    bun install
+    ```
+
+3. Set up Convex:
+    ```bash
+    bunx convex init
+    ```
+
+4. Configure environment variables (if required):
+    - Set up your environment variables in a `.env` file. (Refer to the `.env.example` file for required variables)
+
+## Running the Project
+
+To start the project locally, you'll need to run both the Bun and Convex development servers.
+
+1. Start the Bun development server:
+    ```bash
+    bun run dev
+    ```
+
+2. In another terminal, start the Convex development server:
+    ```bash
+    bunx convex dev
+    ```
+
+3. Open your browser and navigate to `http://localhost:3000` to access the application.
+
+## Scripts
+
+- **bun run dev**: Starts the Bun frontend development server.
+- **bunx convex dev**: Starts the Convex backend development server.
+- **bun run build**: Builds the application for production.
+- **bun run lint**: Lints the codebase for any errors or issues.
+
+## Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
+
+Please ensure your code follows the project's linting and formatting guidelines.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
